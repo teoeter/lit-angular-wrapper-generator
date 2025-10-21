@@ -31,7 +31,6 @@
     "@angular/router": "^20.3.0",
     "lit-components": "workspace:*",
     "lit-angular-wrappers": "workspace:*",
-    "stencil-components": "workspace:*",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
