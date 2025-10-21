@@ -1,0 +1,46 @@
+<div class="container">
+  <h1>Angular App with Web Components</h1>
+
+  <section class="section">
+    <h2>Lit Components (Typed Angular Wrappers)</h2>
+
+    <div class="component-demo">
+      <h3>Lit Counter</h3>
+      <lit-counter
+        [initial]="5"
+        [step]="2"
+        (countChanged)="onLitCountChanged($event)">
+      </lit-counter>
+      <p>Current count from Lit: {{ count() }}</p>
+    </div>
+
+    <div class="component-demo">
+      <h3>Lit Card</h3>
+      <lit-card
+        header="Example Card"
+        footer="Powered by Lit + Angular">
+        <p>This is a Lit-based web component with typed Angular wrappers!</p>
+        <p>It has full TypeScript support and property binding.</p>
+      </lit-card>
+    </div>
+
+    <div class="component-demo">
+      <h3>Lit Button (Typed Angular Wrapper)</h3>
+      <lit-button
+        [label]="'Click Me (Lit)'"
+        [variant]="'primary'"
+        (button-click)="onLitButtonClick()">
+      </lit-button>
+      <lit-button
+        [label]="'Secondary'"
+        [variant]="'secondary'"
+        (button-click)="onLitButtonClick()">
+      </lit-button>
+      <lit-button
+        [label]="'Danger'"
+        [variant]="'danger'"
+        (button-click)="onLitButtonClick()">
+      </lit-button>
+    </div>
+  </section>
+</div>

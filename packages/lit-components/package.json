@@ -1,0 +1,41 @@
+{
+  "name": "lit-components",
+  "version": "0.0.1",
+  "description": "Lit web components library",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./dist/components.d.ts": "./dist/components.d.ts"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc && tsx scripts/build.ts",
+    "build:types": "tsc",
+    "build:components-dts": "tsx scripts/build.ts",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "@open-wc/testing-helpers": "^3.0.1",
+    "@stencil/angular-output-target": "workspace:*",
+    "@types/node": "^22.13.5",
+    "glob": "^11.0.0",
+    "jsdom": "^27.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11",
+    "vitest": "^2.1.8"
+  }
+}

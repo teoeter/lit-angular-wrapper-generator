@@ -1,0 +1,4 @@
+{
+  "typescript.tsdk": "packages/angular-app/node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
